@@ -1,0 +1,8 @@
+{
+	"time": "9:00am-10:00am",
+	"location": "The Spark",
+	"ID": 003,
+	"description": "linear algebra",
+	"reocur": true,
+	"announcements": ["prooooooooofs", "passionfruit monsters are sick", "Kids see ghosts sometimes"]
+}

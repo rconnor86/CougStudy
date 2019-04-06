@@ -1,0 +1,8 @@
+{
+	"time": "10:00 Am- 12:00pm",
+	"location": "The Spark",
+	"ID": 001,
+	"description": " c++ study group",
+	"reocur": true,
+	"announcements": ["group is starting on march 21st", "group  is canceled today"]
+}

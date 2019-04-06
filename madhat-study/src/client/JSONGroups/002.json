@@ -1,0 +1,8 @@
+{
+	"time": "1:00 pm- 2:00pm",
+	"location": "Data 306",
+	"ID": 002,
+	"description": " calc study group",
+	"reocur": false,
+	"announcements": ["learning integrals", "derivatives"]
+}

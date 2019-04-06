@@ -1,7 +1,9 @@
 
 #ignore everything
-*
-
+/*
+!/madhat-study/
+madhat-study/*
 !README.md
-!/madhat-study/src/
+!madhat-study/src
+!madhat-study/src/**
 !.gitignore
