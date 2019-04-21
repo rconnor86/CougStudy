@@ -31,21 +31,21 @@ const router = new AekReactRouter({useHash:false});
           <Page>
           <RouterView router={router}>
           <page path ="/">
-          <BannerHeader theme='prime' key="header" data-flex={0} >Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} >Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu theme="prime">
+          <NavMenu style={{backgroundColor:"#981E32"}}>
           <NavMenuItem icon="home" href="#/page/screen1">Log In</NavMenuItem>
           </NavMenu>
           <div style={{marginBottom:"1em"}}>
           <Input name="name" size="huge" fluid>
           <input/>
-          <Tag theme="prime">Username</Tag>
+          <Tag style={{backgroundColor:"#981E32"}}>Username</Tag>
           </Input>
           </div>
           <div style={{marginBottom:"1em"}}>
           <Input name="name" size="huge" fluid>
           <input/>
-          <Tag theme="prime">Password</Tag>
+          <Tag style={{backgroundColor:"#981E32"}}>Password</Tag>
           </Input>
           </div>
           </BasicSegment>
@@ -61,134 +61,17 @@ const router = new AekReactRouter({useHash:false});
           <SG2 path="/page/sg2"/>
           <SG3 path="/page/sg3"/>
           <SG4 path="/page/sg4"/>
+          <SG5 path= "/page/sg5"/>
+          <SG6 path= "/page/sg6"/>
+          <SG7 path= "/page/sg7"/>
+          <SG8 path= "/page/sg8"/>
+          <SG9 path= "/page/sg9"/>
           <Submit path="/page/submit"/>
           </RouterView>
           </Page>
         </VBox>
     );
-  
-  }
-}
 
-export class Screen1 extends React.Component {
-  render() {
-
-    return (
-        <VBox>
-          <Page>
-          <page path = '#/page/screen1'>
-          <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
-          <BasicSegment>
-          <NavMenu theme="prime">
-          <NavMenuItem icon="home" active>Home</NavMenuItem>
-          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
-          </NavMenu>
-          <h2>Anouncements:</h2>
-          <p>-  Changing meeting location to room 105... (Cpts121)</p>
-          <p>-  Cancelling this week's meeting... (Cpts223)</p>
-          <p>-  New member Nathan Doe has joined group... (Cpts223)</p>
-          <p>-  Due date changed... (Cpts355)</p>
-          </BasicSegment>
-          
-          </page>
-          </Page>
-        </VBox>
-    );
-  
-  }
-}
-
-export class Screen2 extends React.Component {
-  render() {
-
-    return (
-        <VBox>
-          <Page>
-          <page path = '#/page/screen2'>
-          <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
-          <BasicSegment>
-          <NavMenu theme="prime">
-          <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
-          <NavMenuItem icon="calendar" active>Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" href="#/page/screen3">Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem href="#/page/cs121">
-              <h1>CPTS 121</h1>
-              <p>8:10-9:00</p>
-            </NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem href="#/page/cs223">
-              <h1>CPTS 223</h1>
-              <p>10:10-11:00</p>
-            </NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem href="#/page/cs355">
-              <h1>CPTS 355</h1>
-              <p>1:10-2:00</p>
-            </NavMenuItem>
-          </NavMenu>
-          </BasicSegment>
-          </page>
-          </Page>
-        </VBox>
-    );
-  
-  }
-}
-
-export class Screen3 extends React.Component {
-  render() {
-
-    return (
-        <VBox>
-          <Page>
-          <page path = '#/page/screen3'>
-          <BannerHeader theme="prime" key="header" data-flex={0}>Cougs Study</BannerHeader>
-          <BasicSegment>
-          <NavMenu theme="prime">
-          <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
-          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem href="#/page/sg1">
-              <h1>Homework - CPTS 121</h1>
-              <p>Wednesday 6:00-7:00</p>
-            </NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem href="#/page/sg2">
-              <h1>Study for Test - CPTS 223</h1>
-              <p>Thursday 4:00-6:00</p>
-            </NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem href="#/page/sg3">
-              <h1>Group Work - CPTS 355</h1>
-              <p>Saturday 2:00-5:00</p>
-            </NavMenuItem>
-          </NavMenu>
-          <NavMenu>
-            <NavMenuItem icon="idea" href="#/page/submit">
-              Create
-            </NavMenuItem>
-            <NavMenuItem icon="reply">
-              Join
-            </NavMenuItem>
-          </NavMenu>
-          </BasicSegment>
-          </page>
-          </Page>
-        </VBox>
-    );
-  
   }
 }
 
@@ -199,9 +82,9 @@ export class Screen4 extends React.Component {
         <VBox>
           <Page>
           <page path = '#/page/screen4'>
-          <BannerHeader theme="prime" key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu theme="prime">
+          <NavMenu style={{backgroundColor:"#981E32"}}>
           <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
           <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
           <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
@@ -229,14 +112,224 @@ export class Screen4 extends React.Component {
             <NavMenuItem href="#/page/sg4">
               <h1>Homework Help - CPTS 122</h1>
               <p>Wednesday 12-3</p>
+              </NavMenuItem>
+            </NavMenu>
+            <NavMenu>
+              <NavMenuItem icon="idea" href="#/page/submit">
+                Create
+              </NavMenuItem>
+              <NavMenuItem icon="reply">
+                Join
+              </NavMenuItem>
+            </NavMenu>
+            </BasicSegment>
+            </page>
+            </Page>
+          </VBox>
+      );
+
+    }
+  }
+
+export class Screen1 extends React.Component {
+  render() {
+
+    return (
+        <VBox>
+          <Page>
+          <page path = '#/page/screen1'>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BasicSegment>
+          <NavMenu style={{backgroundColor:"#981E32"}}>
+          <NavMenuItem icon="home" active>Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" href="#/page/screen3">Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          <h2>Announcements</h2>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg5">
+              <h1>CPTS 121</h1>
+              <p>Changing meeting location to room 105...</p>
             </NavMenuItem>
           </NavMenu>
           <NavMenu>
-            <NavMenuItem icon="idea" href="#/page/submit">
-              Create
+            <NavMenuItem href="#/page/sg6">
+              <h1>CPTS 223</h1>
+              <p>Cancelling this week's meeting...</p>
             </NavMenuItem>
-            <NavMenuItem icon="reply">
-              Join
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg7">
+              <h1>CPTS 223</h1>
+              <p>New member Nathan Doe has joined group...</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg8">
+              <h1>CPTS 355</h1>
+              <p>Due date changed...</p>
+            </NavMenuItem>
+            </NavMenu>
+          </BasicSegment>
+          </page>
+          </Page>
+        </VBox>
+    );
+
+  }
+}
+
+export class SG5 extends React.Component {
+  render() {
+
+    return (
+      <VBox>
+        <Page>
+          <page path= '#/page/sg5'>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BasicSegment>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+                </NavMenu>
+              <NavMenu>
+                <NavMenuItem href="#/page/sg5">
+                <h2>CPTS 121</h2>
+                <p>Changing meeting location to Todd 105 instead of our normal room. Meeting time will be the same as always.</p>
+                </NavMenuItem>
+              </NavMenu>
+            </BasicSegment>
+          </page>
+        </Page>
+      </VBox>
+      );
+  }
+}
+
+export class SG6 extends React.Component {
+  render() {
+
+    return (
+      <VBox>
+        <Page>
+          <page path= '#/page/sg6'>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BasicSegment>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+                </NavMenu>
+              <NavMenu>
+                <NavMenuItem href="#/page/sg6">
+                <h2>CPTS 223</h2>
+                <p>Cancelling this week's meeting for Spring Break. See you guys next Thursday!</p>
+                </NavMenuItem>
+              </NavMenu>
+            </BasicSegment>
+          </page>
+        </Page>
+      </VBox>
+      );
+  }
+}
+
+export class SG7 extends React.Component {
+  render() {
+
+    return (
+      <VBox>
+        <Page>
+          <page path= '#/page/sg7'>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BasicSegment>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+                </NavMenu>
+              <NavMenu>
+                <NavMenuItem href="#/page/sg7">
+                <h2>CPTS 223</h2>
+                <p>New member Nathan Doe has joined group. He will be joining us this Thursday!</p>
+                </NavMenuItem>
+              </NavMenu>
+            </BasicSegment>
+          </page>
+        </Page>
+      </VBox>
+      );
+  }
+}
+
+export class SG8 extends React.Component {
+  render() {
+
+    return (
+      <VBox>
+        <Page>
+          <page path= '#/page/sg8'>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BasicSegment>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+                </NavMenu>
+              <NavMenu>
+                <NavMenuItem href="#/page/sg8">
+                <h2>CPTS 355</h2>
+                <p>Due date changed for PA2, it is now due on 5/17/2019.</p>
+                </NavMenuItem>
+              </NavMenu>
+            </BasicSegment>
+          </page>
+        </Page>
+      </VBox>
+      );
+  }
+}
+
+
+
+
+export class Screen2 extends React.Component {
+  render() {
+
+    return (
+        <VBox>
+          <Page>
+          <page path = '#/page/screen2'>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BasicSegment>
+          <NavMenu style={{backgroundColor:"#981E32"}}>
+          <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" active>Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" href="#/page/screen3">Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/cs121">
+              <h1>CPTS 121</h1>
+              <p>8:10am-9:00am</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/cs223">
+              <h1>CPTS 223</h1>
+              <p>10:10am-11:00am</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/cs355">
+              <h1>CPTS 355</h1>
+              <p>1:10pm-2:00pm</p>
             </NavMenuItem>
           </NavMenu>
           </BasicSegment>
@@ -244,7 +337,106 @@ export class Screen4 extends React.Component {
           </Page>
         </VBox>
     );
-  
+
+  }
+}
+
+export class Screen3 extends React.Component {
+  render() {
+
+    return (
+        <VBox>
+          <Page>
+          <page path = '#/page/screen3'>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BasicSegment>
+          <NavMenu style={{backgroundColor:"#981E32"}}>
+          <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg1">
+              <h1>Homework - CPTS 121</h1>
+              <p>Wednesday 6:00pm-7:00pm</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg2">
+              <h1>Study for Test - CPTS 223</h1>
+              <p>Thursday 4:00pm-6:00pm</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg3">
+              <h1>Group Work - CPTS 355</h1>
+              <p>Saturday 2:00pm-5:00pm</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem icon="idea" href="#/page/submit">
+              Create
+            </NavMenuItem>
+            <NavMenuItem icon="reply" href="#/page/sg9">
+              Join
+
+            </NavMenuItem>
+          </NavMenu>
+          </BasicSegment>
+          </page>
+          </Page>
+        </VBox>
+    );
+
+  }
+}
+
+export class SG9 extends React.Component {
+  render() {
+
+    return (
+        <VBox>
+          <Page>
+          <page path = '#/page/sg9'>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BasicSegment>
+          <NavMenu style={{backgroundColor:"#981E32"}}>
+          <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg9">
+            <h1>Group Work - CPTS 355</h1>
+            <p>Saturday 6:00pm-9:00pm</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg9">
+            <h1>Homework Help - CPTS 223</h1>
+            <p>Tuesday 1:00pm-3:00pm</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg9">
+            <h1>PA Work Group - CPTS 121</h1>
+            <p>Monday 6:00am-9:00am</p>
+            </NavMenuItem>
+          </NavMenu>
+          <NavMenu>
+            <NavMenuItem href="#/page/sg9">
+            <h1>Midterm Review - CPTS 355</h1>
+            <p>Thursday 7:00am-12:00pm</p>
+            </NavMenuItem>
+          </NavMenu>
+          </BasicSegment>
+          </page>
+          </Page>
+        </VBox>
+    );
+
   }
 }
 
@@ -255,10 +447,10 @@ export class CS121 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/cs121">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -268,8 +460,8 @@ export class CS121 extends React.Component {
               <p>Professor: Andy O'fallon</p>
               <p>Time: MWF 8:10AM-9:00AM</p>
               <p>Description: This class is geared to show students the basics or C, memory allocation and management, and good style while coding. Students will use
-              Visual Studio in this class and must have a working laptop to complete homework assignments and lab assignments.</p>
-              <NavMenu theme="prime">
+              Visual Studio in this class and must have a working laptop to complete Homework assignments and lab assignments.</p>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
                 <NavMenuItem href="#/page/sg1">
                   <h3>Study Group Homework (Creator: Sarah Doe)</h3>
                 </NavMenuItem>
@@ -289,10 +481,10 @@ export class CS223 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/cs223">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -302,7 +494,7 @@ export class CS223 extends React.Component {
               <p>Professor: Hassan</p>
               <p>Time: MWF 10:10AM-11:00AM</p>
               <p>Description: This class is geared to show students the basics or C/C++ and to teach them a wide variety of data structures, how to implement them, and their run time efficiency. Students will upload PAs directly to the EECS GitLab for review by the instructor and the TAs</p>
-              <NavMenu theme="prime">
+              <NavMenu style={{backgroundColor:"#981E32"}}>
                 <NavMenuItem href="#/page/sg2">
                   <h3>Study Group Study for Test (Creator: John Doe)</h3>
                 </NavMenuItem>
@@ -322,10 +514,10 @@ export class CS355 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/cs355">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -335,7 +527,7 @@ export class CS355 extends React.Component {
               <p>Professor: Shakire</p>
               <p>Time: MWF 8:10AM-9:00AM</p>
               <p>Description: This class will give students a brief overview of several different programming languages in order to help make them more well-rounded programmers.</p>
-              <NavMenu theme="prime">
+              <NavMenu style={{backgroundColor:"#981E32"}}>
                 <NavMenuItem href="#/page/sg3">
                   <h3>Study Group Group Work (Creator: Emily Faey)</h3>
                 </NavMenuItem>
@@ -355,10 +547,10 @@ export class SG1 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg1">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -368,7 +560,7 @@ export class SG1 extends React.Component {
                 <p>Location: Terrel Library Newspaper Room </p>
                 <p>Creator: Sarah Doe</p>
                 <p>Time: Mondays 5:00PM</p>
-                <p>Description: Meets weekly to do homework assignments together.</p>
+                <p>Description: Meets weekly to do Homework assignments together.</p>
                 <NavMenuItem icon="remove">
                   Leave Group
                 </NavMenuItem>
@@ -387,10 +579,10 @@ export class SG2 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg2">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -419,10 +611,10 @@ export class SG3 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg3">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -435,7 +627,7 @@ export class SG3 extends React.Component {
                 <p>Description: Meeting weekly to work on our group assignment.</p>
                 <NavMenuItem icon="remove">
                   Leave Group
-                </NavMenuItem>                
+                </NavMenuItem>
             </BasicSegment>
           </page>
         </Page>
@@ -451,10 +643,10 @@ export class SG4 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg4">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -463,7 +655,7 @@ export class SG4 extends React.Component {
                 <h3>Details:</h3>
                 <p>Location: The Fiz </p>
                 <p>Creator: Connor Rosentrator</p>
-                <p>Time: Wednesday 12-3</p>
+                <p>Time: Wednesday 12:00pm-3:00pm</p>
                 <p>Description: Help with Homework</p>
                 <NavMenuItem icon="trash" href="#/page/screen3">
                   Delete
@@ -483,10 +675,10 @@ export class Submit extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/submit">
-            <BannerHeader theme='prime' key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu theme="prime">
-                <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}}>
+                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
                 <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
                 <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
@@ -494,7 +686,7 @@ export class Submit extends React.Component {
                 <form>
                 <div>
                 <label>
-                    
+
                   Group Name
                   <div>
                   <Input placeholder="Homework Help">
@@ -506,7 +698,7 @@ export class Submit extends React.Component {
 
                 <div>
                 <label>
-                    
+
                   Class:
                   <div>
                   <Input placeholder="Cpts 122">
@@ -514,11 +706,11 @@ export class Submit extends React.Component {
                 </div>
                 </label>
                 </div>
-                
+
 
               <div>
                 <label>
-                    
+
                   Location
                   <div>
                   <Input placeholder="The Fiz">
@@ -529,10 +721,10 @@ export class Submit extends React.Component {
 
                 <div>
                 <label>
-                    
+
                   Time
                   <div>
-                  <Input placeholder="Wednesday 12-3">
+                  <Input placeholder="Wednesday 12:00pm-3:00pm">
                 </Input>
                 </div>
                 </label>
@@ -540,7 +732,7 @@ export class Submit extends React.Component {
 
                 <div>
                 <label>
-                    
+
                   Creator
                   <div>
                   <Input placeholder="Connor Rosentrator">
@@ -555,18 +747,18 @@ export class Submit extends React.Component {
                 <label>
                 Description:
                 <div>
-                <textarea id = "Description" placeholder="Help with homework"/>
+                <textarea id = "Description" placeholder="Help with Homework"/>
                 </div>
-                
+
               </label>
               </div>
               <NavMenuItem href="#/page/screen4">
                 Submit
               </NavMenuItem>
 
-              
 
-            </form>               
+
+            </form>
             </BasicSegment>
           </page>
         </Page>
