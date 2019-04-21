@@ -454,13 +454,13 @@ export class CS121 extends React.Component {
                 <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
-              <h2>Cpts 121</h2>
+              <h2>CPTS 121</h2>
               <p>Location: EME 225 </p>
               <p>Professor: Andy O'fallon</p>
               <p>Time: MWF 8:10AM-9:00AM</p>
               <p>Description: This class is geared to show students the basics or C, memory allocation and management, and good style while coding. Students will use
               Visual Studio in this class and must have a working laptop to complete Homework assignments and lab assignments.</p>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
                 <NavMenuItem href="#/page/sg1">
                   <h3>Study Group Homework (Creator: Sarah Doe)</h3>
                 </NavMenuItem>
@@ -488,12 +488,12 @@ export class CS223 extends React.Component {
                 <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
-              <h2>Cpts223</h2>
+              <h2>CPTS 223</h2>
               <p>Location: Dana 203 </p>
               <p>Professor: Hassan</p>
               <p>Time: MWF 10:10AM-11:00AM</p>
               <p>Description: This class is geared to show students the basics or C/C++ and to teach them a wide variety of data structures, how to implement them, and their run time efficiency. Students will upload PAs directly to the EECS GitLab for review by the instructor and the TAs</p>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
                 <NavMenuItem href="#/page/sg2">
                   <h3>Study Group Study for Test (Creator: John Doe)</h3>
                 </NavMenuItem>
@@ -521,12 +521,12 @@ export class CS355 extends React.Component {
                 <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
                 <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
-              <h2>Cpts 355</h2>
+              <h2>CPTS 355</h2>
               <p>Location: Sloan 175 </p>
               <p>Professor: Shakire</p>
               <p>Time: MWF 8:10AM-9:00AM</p>
               <p>Description: This class will give students a brief overview of several different programming languages in order to help make them more well-rounded programmers.</p>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
                 <NavMenuItem href="#/page/sg3">
                   <h3>Study Group Group Work (Creator: Emily Faey)</h3>
                 </NavMenuItem>
