@@ -31,21 +31,21 @@ const router = new AekReactRouter({useHash:false});
           <Page>
           <RouterView router={router}>
           <page path ="/">
-          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} >Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted >Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu style={{backgroundColor:"#981E32"}}>
+          <NavMenu style={{backgroundColor:"#981E32"}}inverted> 
           <NavMenuItem icon="home" href="#/page/screen1">Log In</NavMenuItem>
           </NavMenu>
           <div style={{marginBottom:"1em"}}>
           <Input name="name" size="huge" fluid>
           <input/>
-          <Tag style={{backgroundColor:"#981E32"}}>Username</Tag>
+          <Tag style={{backgroundColor:"#981E32"}} inverted>Username</Tag>
           </Input>
           </div>
           <div style={{marginBottom:"1em"}}>
-          <Input name="name" size="huge" fluid>
+          <Input name="name" size="huge" fluid >
           <input/>
-          <Tag style={{backgroundColor:"#981E32"}}>Password</Tag>
+          <Tag style={{backgroundColor:"#981E32"}} >Password</Tag>
           </Input>
           </div>
           </BasicSegment>
@@ -82,12 +82,12 @@ export class Screen4 extends React.Component {
         <VBox>
           <Page>
           <page path = '#/page/screen4'>
-          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu style={{backgroundColor:"#981E32"}}>
+          <NavMenu style={{backgroundColor:"#981E32"}} inverted>
           <NavMenuItem icon="home" href="#/page/screen1">Home</NavMenuItem>
           <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
+          <NavMenuItem icon="rocket" active>Study Groups</NavMenuItem>
           <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
           </NavMenu>
           <NavMenu>
@@ -138,14 +138,13 @@ export class Screen1 extends React.Component {
         <VBox>
           <Page>
           <page path = '#/page/screen1'>
-          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu style={{backgroundColor:"#981E32"}}>
-          <NavMenuItem icon="home" active>Announcements</NavMenuItem>
-          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" href="#/page/screen3">Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
-          <h2>Announcements</h2>
+          <NavMenu style={{backgroundColor:"#981E32"}}inverted>
+          <NavMenuItem icon="home" active inverted>Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
           </NavMenu>
           <NavMenu>
             <NavMenuItem href="#/page/sg5">
@@ -187,13 +186,13 @@ export class SG5 extends React.Component {
       <VBox>
         <Page>
           <page path= '#/page/sg5'>
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
                 </NavMenu>
               <NavMenu>
                 <NavMenuItem href="#/page/sg5">
@@ -216,13 +215,13 @@ export class SG6 extends React.Component {
       <VBox>
         <Page>
           <page path= '#/page/sg6'>
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
                 </NavMenu>
               <NavMenu>
                 <NavMenuItem href="#/page/sg6">
@@ -245,13 +244,13 @@ export class SG7 extends React.Component {
       <VBox>
         <Page>
           <page path= '#/page/sg7'>
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
                 </NavMenu>
               <NavMenu>
                 <NavMenuItem href="#/page/sg7">
@@ -274,13 +273,13 @@ export class SG8 extends React.Component {
       <VBox>
         <Page>
           <page path= '#/page/sg8'>
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
                 </NavMenu>
               <NavMenu>
                 <NavMenuItem href="#/page/sg8">
@@ -306,13 +305,13 @@ export class Screen2 extends React.Component {
         <VBox>
           <Page>
           <page path = '#/page/screen2'>
-          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu style={{backgroundColor:"#981E32"}}>
-          <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-          <NavMenuItem icon="calendar" active>Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" href="#/page/screen3">Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+          <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" active inverted>Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
           </NavMenu>
           <NavMenu>
             <NavMenuItem href="#/page/cs121">
@@ -348,13 +347,13 @@ export class Screen3 extends React.Component {
         <VBox>
           <Page>
           <page path = '#/page/screen3'>
-          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu style={{backgroundColor:"#981E32"}}>
-          <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+          <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" active inverted>Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
           </NavMenu>
           <NavMenu>
             <NavMenuItem href="#/page/sg1">
@@ -399,13 +398,13 @@ export class SG9 extends React.Component {
         <VBox>
           <Page>
           <page path = '#/page/sg9'>
-          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+          <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
           <BasicSegment>
-          <NavMenu style={{backgroundColor:"#981E32"}}>
-          <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-          <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-          <NavMenuItem icon="rocket" active >Study Groups</NavMenuItem>
-          <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+          <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+          <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+          <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+          <NavMenuItem icon="rocket" active inverted>Study Groups</NavMenuItem>
+          <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
           </NavMenu>
           <NavMenu>
             <NavMenuItem href="#/page/sg9">
@@ -447,13 +446,13 @@ export class CS121 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/cs121">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
               <h2>Cpts 121</h2>
               <p>Location: EME 225 </p>
@@ -481,13 +480,13 @@ export class CS223 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/cs223">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
               <h2>Cpts223</h2>
               <p>Location: Dana 203 </p>
@@ -514,13 +513,13 @@ export class CS355 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/cs355">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
               <h2>Cpts 355</h2>
               <p>Location: Sloan 175 </p>
@@ -547,13 +546,13 @@ export class SG1 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg1">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
                 <h2>Homework: Cpts 121</h2>
                 <h3>Details:</h3>
@@ -579,13 +578,13 @@ export class SG2 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg2">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
                 <h2>Study for Test: Cpts223</h2>
                 <h3>Details:</h3>
@@ -611,13 +610,13 @@ export class SG3 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg3">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
                 <h2>Group Work: Cpts 355</h2>
                 <h3>Details:</h3>
@@ -643,13 +642,13 @@ export class SG4 extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/sg4">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
                 <h2>Homework Help: Cpts 122</h2>
                 <h3>Details:</h3>
@@ -675,13 +674,13 @@ export class Submit extends React.Component {
       <VBox>
         <Page>
           <page path="#/page/submit">
-            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0}>Cougs Study</BannerHeader>
+            <BannerHeader style={{backgroundColor:"#981E32"}} key="header" data-flex={0} inverted>Cougs Study</BannerHeader>
             <BasicSegment>
-              <NavMenu style={{backgroundColor:"#981E32"}}>
-                <NavMenuItem icon="home" href="#/page/screen1">Announcements</NavMenuItem>
-                <NavMenuItem icon="calendar" href="#/page/screen2">Classes</NavMenuItem>
-                <NavMenuItem icon="rocket" href="#/page/screen3" >Study Groups</NavMenuItem>
-                <NavMenuItem icon="setting" href="#/">Log Off</NavMenuItem>
+              <NavMenu style={{backgroundColor:"#981E32"}} inverted>
+                <NavMenuItem icon="home" href="#/page/screen1" inverted>Announcements</NavMenuItem>
+                <NavMenuItem icon="calendar" href="#/page/screen2" inverted>Classes</NavMenuItem>
+                <NavMenuItem icon="rocket" href="#/page/screen3" inverted>Study Groups</NavMenuItem>
+                <NavMenuItem icon="setting" href="#/" inverted>Log Off</NavMenuItem>
               </NavMenu>
                 <form>
                 <div>
